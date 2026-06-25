@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly Electronic Manufacturing</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+<header class="navbar">
+  
+  <!-- Logo -->
+<div class="logo">
+  <a href="index.html">
+    <img src="images3.webp" alt="Stackly Electronics Logo">
+    </a>
+</div>
+
+  <!-- Navigation -->
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <div class="mobile-login">
+        <button class="login-btn" onclick="location.href='login.html'">
+            Login
+        </button>
+    </div>
+    </nav>
+
+  <!-- Login Button -->
+  <button class="login-btn desktop-login"
+        onclick="location.href='login.html'">
+    Login
+</button>
+
+
+  <!-- Mobile Menu -->
+  <div class="menu" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+</header>
+<section class="hero" id="home">
+  <div class="slide active" style="background-image:url('image-8.webp')">
+    <div class="hero-content">
+      <span>SMART ELECTRONICS</span>
+      <h1>Smart Electronic Manufacturing</h1>
+      <p>High-quality PCB assembly, automation, testing and complete product solutions.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('image-2.webp')">
+    <div class="hero-content">
+      <span>ADVANCED TECHNOLOGY</span>
+      <h1>Advanced Production Technology</h1>
+      <p>Reliable manufacturing solutions for smart devices and industrial products.</p>
+      <a href="#products" class="btn">View Products</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('image-4.webp')">
+    <div class="hero-content">
+      <span>QUALITY TESTING</span>
+      <h1>Quality Testing & Innovation</h1>
+      <p>Every electronic product is tested with precision, safety and performance standards.</p>
+      <a href="#contact" class="btn">Contact Now</a>
+    </div>
+  </div>
+
+  <div class="slider-buttons">
+    <button onclick="prevSlide()"><i class="fa-solid fa-angle-left"></i></button>
+    <button onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></button>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <span class="small-title">ABOUT US</span>
+  <h2>Powering The Future With Electronics</h2>
+  <p>
+    Stackly Electronics provides complete electronic manufacturing services including PCB design,
+    circuit assembly, embedded systems, IoT devices, automation, repair support and quality testing.
+  </p>
+
+  <div class="stats">
+    <div class="move-card"><h3>1200+</h3><p>Projects</p></div>
+    <div class="move-card"><h3>450+</h3><p>Clients</p></div>
+    <div class="move-card"><h3>85+</h3><p>Engineers</p></div>
+    <div class="move-card"><h3>99%</h3><p>Quality</p></div>
+  </div>
+</section>
+
+<section class="section feature-section">
+  <div class="feature-left">
+    <img src="image-1.webp" alt="Electronics Manufacturing">
+  </div>
+
+  <div class="feature-right">
+    <span class="small-title">OUR STRENGTH</span>
+    <h2>End-To-End Manufacturing Support</h2>
+    <p>
+      From concept design to final delivery, we support startups, industries and enterprises
+      with modern electronic manufacturing solutions.
+    </p>
+
+    <div class="feature-points">
+      <p><i class="fa-solid fa-check"></i> Custom PCB Design</p>
+      <p><i class="fa-solid fa-check"></i> Prototype Development</p>
+      <p><i class="fa-solid fa-check"></i> Component Sourcing</p>
+      <p><i class="fa-solid fa-check"></i> Final Product Testing</p>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <span class="small-title">OUR SERVICES</span>
+  <h2>Electronic Manufacturing Services</h2>
+
+  <div class="grid">
+    <div class="card move-card">
+      <i class="fa-solid fa-microchip"></i>
+      <h3>PCB Assembly</h3>
+      <p>Professional PCB design, soldering, assembly and production support.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Automation</h3>
+      <p>Industrial automation systems for fast and accurate manufacturing.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-wifi"></i>
+      <h3>IoT Devices</h3>
+      <p>Smart connected devices for homes, industries and businesses.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Repair Support</h3>
+      <p>Chip-level diagnosis, testing, servicing and component replacement.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h3>Quality Testing</h3>
+      <p>Performance testing, safety checks and product validation.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-industry"></i>
+      <h3>Mass Production</h3>
+      <p>Bulk electronic product manufacturing with strong quality control.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section products" id="products">
+  <span class="small-title">PRODUCTS</span>
+  <h2>Manufacturing Products</h2>
+
+  <div class="grid">
+    <div class="product move-card">
+      <img src="imresizer-image-5.webp" alt="PCB Boards">
+      <h3>PCB Boards</h3>
+      <p>Custom circuit boards for electronic devices.</p>
+    </div>
+
+    <div class="product move-card">
+      <img src="image-3.webp" alt="Micro Controllers">
+      <h3>Micro Controllers</h3>
+      <p>Embedded controllers for automation projects.</p>
+    </div>
+
+    <div class="product move-card">
+      <img src="image-2.webp" alt="Smart Sensors">
+      <h3>Smart Sensors</h3>
+      <p>Temperature, motion, pressure and IoT sensors.</p>
+    </div>
+
+    <div class="product move-card">
+      <img src="image-4.webp" alt="Control Panels">
+      <h3>Control Panels</h3>
+      <p>Industrial control units for automation systems.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section industries" id="industries">
+  <span class="small-title">INDUSTRIES</span>
+  <h2>Industries We Serve</h2>
+
+  <div class="grid">
+    <div class="card move-card">
+      <i class="fa-solid fa-car"></i>
+      <h3>Automobile</h3>
+      <p>Electronic modules and control systems for vehicles.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-house-signal"></i>
+      <h3>Smart Home</h3>
+      <p>IoT devices, sensors and connected home solutions.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-hospital"></i>
+      <h3>Healthcare</h3>
+      <p>Medical electronics with safety-focused testing.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-building"></i>
+      <h3>Industrial</h3>
+      <p>Automation boards and machine control systems.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-tower-cell"></i>
+      <h3>Telecom</h3>
+      <p>Communication hardware and network device support.</p>
+    </div>
+
+    <div class="card move-card">
+      <i class="fa-solid fa-solar-panel"></i>
+      <h3>Energy</h3>
+      <p>Power control systems and renewable energy electronics.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section process" id="process">
+  <span class="small-title">WORK PROCESS</span>
+  <h2>From Idea To Finished Product</h2>
+
+  <div class="timeline">
+    <div class="move-card">
+      <span>01</span>
+      <h3>Requirement</h3>
+      <p>We understand client needs, product goals and technical details.</p>
+    </div>
+
+    <div class="move-card">
+      <span>02</span>
+      <h3>Design</h3>
+      <p>We create circuit design, PCB layout and prototype planning.</p>
+    </div>
+
+    <div class="move-card">
+      <span>03</span>
+      <h3>Manufacturing</h3>
+      <p>We assemble components and build the final electronic product.</p>
+    </div>
+
+    <div class="move-card">
+      <span>04</span>
+      <h3>Testing</h3>
+      <p>We test safety, quality, performance and durability before delivery.</p>
+    </div>
+  </div>
+</section>
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<section class="section testimonial-section">
+  <span class="small-title">CLIENT REVIEWS</span>
+  <h2 class="move-title">What Our Clients Say</h2>
+
+  <div class="testimonial-slider">
+
+    <div class="review">
+      <img src="k_11zon.webp" alt="Ravi Kumar">
+      <div class="stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <p>"Stackly Electronics delivered our PCB project with excellent quality and fast support."</p>
+      <h3>- Ravi Kumar</h3>
+    </div>
+
+    <div class="review">
+      <img src="h_11zon.webp" alt="Priya Sharma">
+      <div class="stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+      <p>"Best team for IoT device development and testing. Very professional work."</p>
+      <h3>- Priya Sharma</h3>
+    </div>
+
+    <div class="review">
+      <img src="m_11zon.webp" alt="Arjun Reddy">
+      <div class="stars">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <p>"Their manufacturing process and quality checking helped our product launch smoothly."</p>
+      <h3>- Arjun Reddy</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="section why">
+  <span class="small-title">WHY CHOOSE US</span>
+  <h2>Reliable Electronic Solutions</h2>
+
+  <div class="grid">
+    <div class="card move-card">
+      <h3>Fast Delivery</h3>
+      <p>Quick manufacturing and on-time project delivery.</p>
+    </div>
+
+    <div class="card move-card">
+      <h3>Expert Team</h3>
+      <p>Experienced engineers and technical specialists.</p>
+    </div>
+
+    <div class="card move-card">
+      <h3>Advanced Machines</h3>
+      <p>Modern tools for accurate electronic production.</p>
+    </div>
+
+    <div class="card move-card">
+      <h3>Affordable Cost</h3>
+      <p>Best quality services at reasonable pricing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-new" id="contact">
+  <div class="contact-img">
+    <img src="image-6.webp" alt="Contact Electronics">
+  </div>
+
+  <div class="contact-box">
+    <span class="small-title">CONTACT US</span>
+    <h2>Start Your Electronic Project</h2>
+    <p>Need PCB assembly, IoT devices, repair support or automation work? Send your project details.</p>
+
+    <form onsubmit="sendMessage(event)">
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Your Name" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-microchip"></i>
+        <input type="text" placeholder="Project Type" required>
+      </div>
+
+      <div class="input-group textarea">
+        <i class="fa-solid fa-message"></i>
+        <textarea placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<section>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-box">
+<h2 class="footer-logo">
+  <a href="index.html">
+    <img src="images3.webp" alt="Stackly Electronics Logo">
+  </a>
+</h2>
+      <p>
+        We provide PCB assembly, IoT solutions, automation systems, embedded products
+        and high-quality electronic manufacturing services.
+      </p>
+
+      <div class="social">
+        <a href="404.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#industries">Industries</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Our Services</h3>
+      <a href="#services">PCB Assembly</a>
+      <a href="#services">IoT Development</a>
+      <a href="#services">Automation</a>
+      <a href="#services">Quality Testing</a>
+      <a href="#services">Repair Support</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> info@stacklyelectronics.com</p>
+      <button onclick="location.href='#contact'">Get Quote</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Electronics. All Rights Reserved.</p>
+  </div>
+</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
