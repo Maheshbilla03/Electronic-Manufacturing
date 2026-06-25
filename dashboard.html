@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Manufacturing Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>⚡ Stackly</h2>
+
+        <a href="#dashboard" class="active">Dashboard</a>
+        <a href="#production">Production</a>
+        <a href="#machines">Machines</a>
+        <a href="#orders">Orders</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#reports">Reports</a>
+     <a href="index.html">Logout</a>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <header>
+            <div>
+                <h1>Electronic Manufacturing Dashboard</h1>
+                <p>Welcome Back, Admin</p>
+            </div>
+
+            <button onclick="toggleTheme()">Change Color</button>
+        </header>
+
+        <!-- Dashboard Cards -->
+        <section class="cards" id="dashboard">
+
+            <div class="card">
+                <h3>Total Products</h3>
+                <h2>12,450</h2>
+                <p>+18% this month</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Machines</h3>
+                <h2>48</h2>
+                <p>Running Smoothly</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <h2>126</h2>
+                <p>Need Approval</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <h2>₹8.5L</h2>
+                <p>Today's Sales</p>
+            </div>
+
+        </section>
+
+        <!-- Production -->
+        <section class="content" id="production">
+
+            <div class="box">
+
+                <h2>Production Status</h2>
+
+                <div class="bar">
+                    <span>PCB Assembly</span>
+                    <div><p style="width:85%"></p></div>
+                </div>
+
+                <div class="bar">
+                    <span>Chip Testing</span>
+                    <div><p style="width:70%"></p></div>
+                </div>
+
+                <div class="bar">
+                    <span>Quality Check</span>
+                    <div><p style="width:60%"></p></div>
+                </div>
+
+                <div class="bar">
+                    <span>Packing</span>
+                    <div><p style="width:90%"></p></div>
+                </div>
+
+            </div>
+
+            <!-- Machines -->
+            <div class="box" id="machines">
+
+                <h2>Machine Status</h2>
+
+                <div class="machine running">
+                    SMT Machine
+                    <span>Running</span>
+                </div>
+
+                <div class="machine pending">
+                    Soldering Unit
+                    <span>Maintenance</span>
+                </div>
+
+                <div class="machine running">
+                    Testing Unit
+                    <span>Running</span>
+                </div>
+
+                <div class="machine stop">
+                    Laser Cutter
+                    <span>Stopped</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Orders -->
+        <section class="table-box" id="orders">
+
+            <h2>Recent Manufacturing Orders</h2>
+
+            <table>
+
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>#EM101</td>
+                    <td>PCB Board</td>
+                    <td>500</td>
+                    <td><span class="done">Completed</span></td>
+                </tr>
+
+                <tr>
+                    <td>#EM102</td>
+                    <td>Micro Controller</td>
+                    <td>250</td>
+                    <td><span class="process">Processing</span></td>
+                </tr>
+
+                <tr>
+                    <td>#EM103</td>
+                    <td>LED Display</td>
+                    <td>800</td>
+                    <td><span class="pending-text">Pending</span></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Inventory -->
+        <section class="table-box" id="inventory">
+
+            <h2>Inventory</h2>
+
+            <p>PCB Boards : 1200</p>
+            <p>Micro Chips : 850</p>
+            <p>LED Displays : 640</p>
+            <p>Sensors : 540</p>
+            <p>Resistors : 3500</p>
+
+        </section>
+
+        <!-- Reports -->
+        <section class="table-box" id="reports">
+
+            <h2>Reports</h2>
+
+            <p>Monthly Production : 85%</p>
+            <p>Machine Efficiency : 90%</p>
+            <p>Quality Score : 96%</p>
+            <p>Production Cost : ₹5.2L</p>
+            <p>Revenue Generated : ₹8.5L</p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

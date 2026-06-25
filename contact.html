@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Stackly Electronics</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <a href="index.html">
+  
+        <img src="images3.webp" alt="Stackly Electronics Logo">
+    </a>
+  </div>
+
+  <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    <a href="login.html" class="mobile-login-btn">Login</a>
+      
+  </nav>
+
+  <button class="login-btn desktop-login"
+      onclick="location.href='login.html'">
+      Login
+  </button>
+
+  <div class="menu" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+  </div>
+
+</header>
+
+<section class="contact-hero">
+  <div class="hero-content">
+    <span>CONTACT US</span>
+    <h1>Let’s Build Your Electronic Project</h1>
+    <p>Contact us for PCB assembly, IoT devices, automation systems, embedded projects and manufacturing support.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-left reveal">
+    <img src="image-6.webp" alt="electronics">
+
+    <div class="info-card">
+      <h3><i class="fa-solid fa-headset"></i> Need Help?</h3>
+      <p>Our technical team is ready to support your electronic manufacturing project.</p>
+    </div>
+  </div>
+
+  <div class="contact-right reveal">
+    <span class="small-title">SEND MESSAGE</span>
+    <h2>Start Your Project With Us</h2>
+
+    <form onsubmit="sendMessage(event)">
+      <div class="input-box">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Your Name" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa-solid fa-microchip"></i>
+        <input type="text" placeholder="Project Type" required>
+      </div>
+
+      <div class="input-box textarea">
+        <i class="fa-solid fa-message"></i>
+        <textarea placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<section class="contact-info">
+  <div class="contact-card reveal">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>Location</h3>
+    <p>Hyderabad, India</p>
+  </div>
+
+  <div class="contact-card reveal">
+    <i class="fa-solid fa-phone"></i>
+    <h3>Phone</h3>
+    <p>+91 98765 43210</p>
+  </div>
+
+  <div class="contact-card reveal">
+    <i class="fa-solid fa-envelope"></i>
+    <h3>Email</h3>
+    <p>info@stacklyelectronics.com</p>
+  </div>
+
+  <div class="contact-card reveal">
+    <i class="fa-solid fa-clock"></i>
+    <h3>Working Hours</h3>
+    <p>Mon - Sat : 9AM - 6PM</p>
+  </div>
+</section>
+
+<section class="map-section">
+  <div class="map-box reveal">
+    <h2>Visit Our Manufacturing Center</h2>
+    <p>We provide professional electronic product development and production support.</p>
+    <iframe
+      src="https://www.google.com/maps?q=Hyderabad%20India&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<section>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-box">
+     <div class="footer-logo">
+        <a href="index.html">
+  <img src="images3.webp" alt="Stackly Electronics Logo">
+      <p style="margin-top: -30px;">PCB assembly, IoT solutions, automation systems and electronic product manufacturing.</p>
+        </a>
+    </div>
+      <div class="social">
+        <a href="404.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">PCB Assembly</a>
+      <a href="#">IoT Development</a>
+      <a href="#">Automation</a>
+      <a href="#">Quality Testing</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> info@stacklyelectronics.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Electronics. All Rights Reserved.</p>
+  </div>
+</footer>
+</section>
+
+<script src="contact.js"></script>
+</body>
+</html>

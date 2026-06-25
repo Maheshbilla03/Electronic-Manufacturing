@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Login</title>
+
+  <link rel="stylesheet" href="login.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="bg"></div>
+
+  <div class="container">
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+      <h1>Welcome to <span>Stackly</span></h1>
+      <p>Smart Electronics Manufacturing Platform</p>
+    </div>
+
+    <!-- Form Box -->
+    <div class="form-box">
+
+      <div class="btn-box">
+        <button type="button" onclick="showLogin()">Login</button>
+        <button type="button" onclick="showSignup()">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form active">
+
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+
+        <a href="dashboard.html" class="btn">Login</a>
+       
+
+        <!-- Forgot Password -->
+        <p class="forgot">
+          <a href="404.html">Forgot Password?</a>
+        </p>
+
+        <!-- Social Login -->
+        <div class="social-login">
+          <p>Or continue with</p>
+
+          <div class="social-icons">
+            <a href="404.html"><i class="fab fa-google"></i></a>
+            <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="404.html"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form id="signupForm" class="form">
+
+        <h2>Create Account</h2>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Create Password" required>
+
+        <button type="submit">Create Account</button>
+
+        <!-- Social Signup -->
+        <div class="social-login">
+          <p>Or continue with</p>
+
+          <div class="social-icons">
+            <a href="404.html"><i class="fab fa-google"></i></a>
+            <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="404.html"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>

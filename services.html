@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Stackly Electronics</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="images3.webp" alt="Stackly Electronics Logo">
+      </a>
+  </div>
+
+  <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    <a href="login.html" class="mobile-login-btn">Login</a>
+     
+  </nav>
+
+  <button class="login-btn desktop-login"
+      onclick="location.href='login.html'">
+      Login
+  </button>
+
+  <div class="menu" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+  </div>
+
+</header>
+
+<section class="service-hero">
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+
+  <div class="hero-content">
+    <span>OUR SERVICES</span>
+    <h1>Complete Electronic Manufacturing Services</h1>
+    <p>PCB assembly, automation, IoT, embedded systems, testing and mass production solutions.</p>
+    <a href="#services">Explore Services</a>
+  </div>
+</section>
+
+<section class="services-section" id="services">
+  <span class="small-title">WHAT WE DO</span>
+  <h2>Professional Electronics Solutions</h2>
+
+  <div class="service-grid">
+    <div class="service-card reveal">
+      <i class="fa-solid fa-microchip"></i>
+      <h3>PCB Assembly</h3>
+      <p>High-quality PCB design, soldering, component mounting and complete circuit board assembly.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Industrial Automation</h3>
+      <p>Smart automation systems for factories, machines, production lines and control panels.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <i class="fa-solid fa-wifi"></i>
+      <h3>IoT Development</h3>
+      <p>Smart connected devices with sensors, cloud connection, monitoring and real-time control.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <i class="fa-solid fa-code"></i>
+      <h3>Embedded Systems</h3>
+      <p>Microcontroller programming, firmware development and embedded hardware support.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h3>Quality Testing</h3>
+      <p>Product testing, safety checking, performance validation and final inspection.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <i class="fa-solid fa-industry"></i>
+      <h3>Mass Production</h3>
+      <p>Bulk manufacturing with strong quality control, fast delivery and production support.</p>
+    </div>
+  </div>
+</section>
+
+<section class="feature-section">
+  <div class="feature-img reveal">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="">
+  </div>
+
+  <div class="feature-content reveal">
+    <span class="small-title">ADVANCED SUPPORT</span>
+    <h2>From Prototype To Final Product</h2>
+    <p>
+      We support your complete product journey from idea discussion, circuit planning,
+      prototype development, testing, production and delivery.
+    </p>
+
+    <div class="feature-list">
+      <p><i class="fa-solid fa-check"></i> Custom Circuit Design</p>
+      <p><i class="fa-solid fa-check"></i> Component Selection</p>
+      <p><i class="fa-solid fa-check"></i> Hardware Testing</p>
+      <p><i class="fa-solid fa-check"></i> Final Manufacturing</p>
+    </div>
+  </div>
+</section>
+
+<section class="process-section">
+  <span class="small-title">WORK PROCESS</span>
+  <h2>How We Deliver Services</h2>
+
+  <div class="process-grid">
+    <div class="process-card reveal">
+      <span>01</span>
+      <h3>Requirement</h3>
+      <p>We understand your electronic project needs and product goals.</p>
+    </div>
+
+    <div class="process-card reveal">
+      <span>02</span>
+      <h3>Design</h3>
+      <p>Our team creates circuit design, PCB layout and prototype plan.</p>
+    </div>
+
+    <div class="process-card reveal">
+      <span>03</span>
+      <h3>Development</h3>
+      <p>We build prototype, assemble components and develop firmware.</p>
+    </div>
+
+    <div class="process-card reveal">
+      <span>04</span>
+      <h3>Testing</h3>
+      <p>Every product is tested for safety, quality and performance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section">
+  <span class="small-title">SERVICE PLANS</span>
+  <h2>Choose Your Service Package</h2>
+
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <h3>Basic</h3>
+      <h2>₹9,999</h2>
+      <p>Prototype support for small electronic projects.</p>
+      <ul>
+        <li>PCB Design</li>
+        <li>Basic Testing</li>
+        <li>Email Support</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="price-card reveal active-price">
+      <h3>Professional</h3>
+      <h2>₹24,999</h2>
+      <p>Complete PCB assembly and product development.</p>
+      <ul>
+        <li>PCB Assembly</li>
+        <li>Firmware Support</li>
+        <li>Quality Testing</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    <div class="price-card reveal">
+      <h3>Enterprise</h3>
+      <h2>Custom</h2>
+      <p>Bulk manufacturing and automation solutions.</p>
+      <ul>
+        <li>Mass Production</li>
+        <li>Automation Support</li>
+        <li>Dedicated Team</li>
+      </ul>
+      <button>Contact Us</button>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Need Electronic Manufacturing Support?</h2>
+  <p>Share your project details and our technical team will contact you.</p>
+  <a href="index.html#contact">Get Free Quote</a>
+</section>
+<section>
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-box">
+     <div class="footer-logo">
+        <a href="index.html">
+  <img src="images3.webp" alt="Stackly Electronics Logo">
+      <p style="margin-top: -30px;">PCB assembly, IoT solutions, automation systems and electronic product manufacturing.</p>
+      </a>
+     </div>
+      <div class="social">
+        <a href="404.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="404.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="404.html"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="404.html"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Services</h3>
+      <a href="#">PCB Assembly</a>
+      <a href="#">IoT Development</a>
+      <a href="#">Automation</a>
+      <a href="#">Quality Testing</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> info@stacklyelectronics.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Electronics. All Rights Reserved.</p>
+  </div>
+</footer>
+</section>
+
+<script src="services.js"></script>
+</body>
+</html>
